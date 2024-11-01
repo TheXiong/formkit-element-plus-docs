@@ -20,4 +20,4 @@ git add -A
 git commit -m 'deploy to the gh-pages'
 
 # 如果发布到 https://<USERNAME>.github.io
-git push -f git@github.com:TheXiong/formkitElementPlus.github.io.git main:gh-pages
+git push -f git@github.com:TheXiong/formkit-element-plus-docs.git master:gh-pages

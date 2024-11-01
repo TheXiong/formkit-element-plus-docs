@@ -66,7 +66,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/xinlei3166/vitepress-demo' }
+      { icon: 'github', link: 'https://github.com/TheXiong/formkit-element-plus' }
     ],
 
     footer: {
