@@ -16,7 +16,6 @@
       name="name"
       label="姓名"
       validation="required"
-      formItem
     />
     <FormKit
       type="el-select"
@@ -28,7 +27,6 @@
         { value: '1', label: '男' },
       ]"
       validation="required"
-      formItem
     />
 
     <template #footer="{ disabled }">
@@ -77,7 +75,6 @@ export default defineComponent({
       name="name"
       label="姓名"
       validation="required"
-      formItem
     />
     <FormKit
       type="el-select"
@@ -89,7 +86,6 @@ export default defineComponent({
         { value: '1', label: '男' },
       ]"
       validation="required"
-      formItem
     />
 
     <template #footer="{ disabled, node }">
@@ -144,7 +140,6 @@ export default defineComponent({
       name="name"
       label="姓名"
       validation="required"
-      formItem
     />
     <FormKit
       type="el-select"
@@ -156,7 +151,6 @@ export default defineComponent({
         { value: '1', label: '男' },
       ]"
       validation="required"
-      formItem
     />
   </FormKit>
 
@@ -233,7 +227,6 @@ export default defineComponent({
       name="name"
       label="姓名"
       validation="required"
-      formItem
     />
     <FormKit
       type="el-select"
@@ -245,7 +238,6 @@ export default defineComponent({
         { value: '1', label: '男' },
       ]"
       validation="required"
-      formItem
     />
 
     <template #footer="{ disabled }">
@@ -312,7 +304,6 @@ export default defineComponent({
       name="name"
       label="姓名"
       validation="required"
-      formItem
     />
     <FormKit
       type="el-select"
@@ -324,7 +315,6 @@ export default defineComponent({
         { value: '1', label: '男' },
       ]"
       validation="required"
-      formItem
     />
 
     <template #footer="{ disabled, node }">
@@ -368,11 +358,3 @@ export default defineComponent({
 ```
 
 :::
-
-## Attributes
-
-| 参数    | 说明   | 类型    | 可选值                                             | 默认值  |
-| ------- | ------ | ------- | -------------------------------------------------- | ------- |
-| size    | 尺寸   | string  | large / small / mini                               | default |
-| type    | 类型   | string  | primary / success / warning / info / danger / text | primary |
-| loading | 加载中 | boolean | —                                                  | false   |

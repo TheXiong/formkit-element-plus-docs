@@ -59,7 +59,6 @@ app.use(
       name="name"
       label="姓名"
       validation="required"
-      formItem
     />
     <FormKit
       type="el-select"
@@ -71,7 +70,6 @@ app.use(
         { value: '1', label: '男' },
       ]"
       validation="required"
-      formItem
     />
 
     <template #footer="{disabled}">

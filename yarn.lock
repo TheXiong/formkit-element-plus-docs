@@ -1455,10 +1455,10 @@ format@^0.2.0:
   resolved "https://registry.yarnpkg.com/format/-/format-0.2.2.tgz#d6170107e9efdc4ed30c9dc39016df942b5cb58b"
   integrity sha512-wzsgA6WOq+09wrU1tsJ09udeR/YZRaeArL9e1wPbFg3GG2yDnC2ldKpxs4xunpFF9DgqCqOIra3bc1HWrJ37Ww==
 
-formkit-element-plus@1.0.10:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/formkit-element-plus/-/formkit-element-plus-1.0.10.tgz#c454adf86c0f339b8aa39ce7cd9efc4cd8092de5"
-  integrity sha512-5Qc5+S1juVok4lE4yAmea1NclrH/jxfreJZpmYLUdTLQHydc93UY5RJykRQ/R6LhUcWCvTD963hUe5p1Jv7lOQ==
+formkit-element-plus@1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/formkit-element-plus/-/formkit-element-plus-1.0.12.tgz#0ea80e943082d82655b83745758e07631cd90474"
+  integrity sha512-zRHjAHnc4wUV0Ys6PWBF6vY49Q8iY/1DhycEfE4l98sHwbwLWQlZPAqu0v1VVBzEuJjkW8xzttsSyw+T4f1Quw==
   dependencies:
     vue "^3.3.4"
 
