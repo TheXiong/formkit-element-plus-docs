@@ -32,7 +32,7 @@ yarn add formkit-element-plus
 const app = createApp(App)
 
 import { plugin, defaultConfig } from '@formkit/vue'
-import { createElementPlugin } from 'formkit-element-plus'
+import { ElementPlusInputs } from 'formkit-element-plus'
 import { zh } from '@formkit/i18n'
 import '@formkit/themes/genesis' // formkit主题
 
@@ -42,7 +42,9 @@ app.use(
     // 设置语言为中文
     locales: { zh },
     locale: 'zh',
-    plugins: [createElementPlugin()],
+    inputs: {
+      ...ElementPlusInputs,
+    },
   }),
 )
 ```
@@ -54,12 +56,7 @@ app.use(
 ```vue
 <template>
   <FormKit ref="myForm" type="el-form" v-model="data" @Submit="onSubmit">
-    <FormKit
-      type="el-input"
-      name="name"
-      label="姓名"
-      validation="required"
-    />
+    <FormKit type="el-input" name="name" label="姓名" validation="required" />
     <FormKit
       type="el-select"
       name="sex"
@@ -72,7 +69,7 @@ app.use(
       validation="required"
     />
 
-    <template #footer="{disabled}">
+    <template #footer="{ disabled }">
       <FormKit type="submit" :disabled="disabled" />
     </template>
   </FormKit>
