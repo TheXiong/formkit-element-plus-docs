@@ -11,12 +11,7 @@
 ```vue
 <template>
   <FormKit ref="myForm" type="el-form" v-model="data" @Submit="onSubmit">
-    <FormKit
-      type="el-input"
-      name="name"
-      label="姓名"
-      validation="required"
-    />
+    <FormKit type="el-input" name="name" label="姓名" validation="required" />
     <FormKit
       type="el-select"
       name="sex"
@@ -70,12 +65,7 @@ export default defineComponent({
 ```vue
 <template>
   <FormKit ref="myForm" type="el-form" v-model="data" @Submit="onSubmit">
-    <FormKit
-      type="el-input"
-      name="name"
-      label="姓名"
-      validation="required"
-    />
+    <FormKit type="el-input" name="name" label="姓名" validation="required" />
     <FormKit
       type="el-select"
       name="sex"
@@ -135,12 +125,7 @@ export default defineComponent({
 ```vue
 <template>
   <FormKit ref="myForm" type="el-form" v-model="data" @Submit="onSubmit">
-    <FormKit
-      type="el-input"
-      name="name"
-      label="姓名"
-      validation="required"
-    />
+    <FormKit type="el-input" name="name" label="姓名" validation="required" />
     <FormKit
       type="el-select"
       name="sex"
@@ -222,12 +207,7 @@ export default defineComponent({
     v-model="data"
     @Submit="onSubmit"
   >
-    <FormKit
-      type="el-input"
-      name="name"
-      label="姓名"
-      validation="required"
-    />
+    <FormKit type="el-input" name="name" label="姓名" validation="required" />
     <FormKit
       type="el-select"
       name="sex"
@@ -277,8 +257,6 @@ export default defineComponent({
 
 ## 尺寸控制
 
-根据你们的设计情况，来选择最佳的标签对齐方式。
-
 :::demo
 
 ```vue
@@ -299,12 +277,7 @@ export default defineComponent({
     v-model="data"
     @Submit="onSubmit"
   >
-    <FormKit
-      type="el-input"
-      name="name"
-      label="姓名"
-      validation="required"
-    />
+    <FormKit type="el-input" name="name" label="姓名" validation="required" />
     <FormKit
       type="el-select"
       name="sex"
@@ -352,6 +325,210 @@ export default defineComponent({
     }
 
     return { data, myForm, size, onSubmit }
+  },
+})
+</script>
+```
+
+:::
+
+## 表单布局
+
+:::demo
+
+```vue
+<template>
+  <FormKit ref="myForm" type="el-form" v-model="data" @Submit="onSubmit">
+    <FormKit type="el-input" name="name" label="姓名" validation="required" />
+
+    <el-row>
+      <el-col :span="12">
+        <FormKit
+          type="el-select"
+          name="sex"
+          label="性别"
+          :options="[
+            // 设置下拉框选项
+            { value: '0', label: '女' },
+            { value: '1', label: '男' },
+          ]"
+          validation="required"
+        />
+      </el-col>
+      <el-col :span="12">
+        <FormKit
+          type="el-input-number"
+          name="age"
+          label="年龄"
+          validation="required"
+        />
+      </el-col>
+    </el-row>
+
+    <template #footer="{ disabled, node }">
+      <el-button
+        :loading="disabled"
+        :disabled="disabled"
+        type="primary"
+        @click="node.submit"
+        >提交</el-button
+      >
+    </template>
+  </FormKit>
+
+  <div>{{ data }}</div>
+</template>
+
+<script>
+import { ref, defineComponent } from 'vue'
+
+export default defineComponent({
+  name: 'InputDemo',
+  setup() {
+    const data = ref()
+    const myForm = ref()
+
+    const onSubmit = () => {
+      console.log(data.value, 'submited')
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve()
+        }, 1000)
+      })
+    }
+
+    return { data, myForm, onSubmit }
+  },
+})
+</script>
+```
+
+:::
+
+## 默认值
+
+通过value属性设置表单域的初始值
+
+:::demo
+
+```vue
+<template>
+  <FormKit ref="myForm" type="el-form" v-model="data" @Submit="onSubmit">
+    <FormKit type="el-input" name="name" label="姓名" validation="required" />
+    <FormKit
+      type="el-select"
+      name="sex"
+      label="性别"
+      value="1"
+      :options="[
+        // 设置下拉框选项
+        { value: '0', label: '女' },
+        { value: '1', label: '男' },
+      ]"
+      validation="required"
+    />
+
+    <template #footer="{ disabled, node }">
+      <el-button
+        :loading="disabled"
+        :disabled="disabled"
+        type="primary"
+        @click="node.submit"
+        >提交</el-button
+      >
+    </template>
+  </FormKit>
+
+  <div>{{ data }}</div>
+</template>
+
+<script>
+import { ref, defineComponent } from 'vue'
+
+export default defineComponent({
+  name: 'InputDemo',
+  setup() {
+    const data = ref()
+    const myForm = ref()
+
+    const onSubmit = () => {
+      console.log(data.value, 'submited')
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve()
+        }, 1000)
+      })
+    }
+
+    return { data, myForm, onSubmit }
+  },
+})
+</script>
+```
+
+:::
+
+## 设置值
+
+:::demo
+
+```vue
+<template>
+  <el-button type="primary" @click="setValue" style="margin-bottom:18px">设置值</el-button>
+  <FormKit ref="myForm" type="el-form" v-model="data" @Submit="onSubmit">
+    <FormKit type="el-input" name="name" label="姓名" validation="required" />
+    <FormKit
+      type="el-select"
+      name="sex"
+      label="性别"
+      :options="[
+        // 设置下拉框选项
+        { value: '0', label: '女' },
+        { value: '1', label: '男' },
+      ]"
+      validation="required"
+    />
+
+    <template #footer="{ disabled, node }">
+      <el-button
+        :loading="disabled"
+        :disabled="disabled"
+        type="primary"
+        @click="node.submit"
+        >提交</el-button
+      >
+    </template>
+  </FormKit>
+
+  <div>{{ data }}</div>
+</template>
+
+<script>
+import { ref, defineComponent } from 'vue'
+
+export default defineComponent({
+  name: 'InputDemo',
+  setup() {
+    const data = ref()
+    const myForm = ref()
+
+    const setValue = () => {
+        data.value = {
+          name: '张三',
+          sex: '0',
+        }
+    }
+
+    const onSubmit = () => {
+      console.log(data.value, 'submited')
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve()
+        }, 1000)
+      })
+    }
+
+    return { data, myForm, onSubmit, setValue }
   },
 })
 </script>

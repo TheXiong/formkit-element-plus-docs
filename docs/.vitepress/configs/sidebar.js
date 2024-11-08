@@ -63,8 +63,33 @@ function getGuideSidebar() {
           link: '/guide/',
         },
         {
-          text: '表单',
+          text: 'Formkit组件',
+          link: '/guide/formkitComponent',
+        },
+      ]
+    },
+    {
+      text: '基础',
+      items: [
+        {
+          text: '表单',         
           link: '/guide/form',
+        },
+        {
+          text: '分组',
+          link: '/guide/group',
+        },
+        {
+          text: '列表',
+          link: '/guide/list',
+        },
+        {
+          text: '校验',
+          link: '/guide/validation',
+        },
+        {
+          text: '联动',
+          link: '/guide/relation',
         },
       ]
     }
