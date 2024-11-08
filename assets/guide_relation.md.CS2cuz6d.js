@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.BVvxzGKx.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"guide/relation.md","filePath":"guide/relation.md","lastUpdated":1731056668000}'),r={name:"guide/relation.md"};function o(n,i,s,c,d,l){return a(),t("div")}const m=e(r,[["render",o]]);export{_ as __pageData,m as default};
