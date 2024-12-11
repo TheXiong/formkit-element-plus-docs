@@ -29,24 +29,23 @@ yarn add formkit-element-plus
 在入口main.ts文件中,全局注入FormKit、FormKitSchema和基于element-plus封装的输入组件。
 
 ```typescript
-const app = createApp(App)
-
 import { plugin, defaultConfig } from '@formkit/vue'
-import { ElementPlusInputs } from 'formkit-element-plus'
+import { ElementPlusInputs } from "formkit-element-plus";
 import { zh } from '@formkit/i18n'
-import '@formkit/themes/genesis' // formkit主题
+import ElementPlus from "element-plus";
+import "element-plus/dist/index.css";
 
-app.use(
-  plugin,
-  defaultConfig({
-    // 设置语言为中文
+const app = createApp(App);
+
+app.use(ElementPlus);
+app.use(plugin, defaultConfig({
+    // set language
     locales: { zh },
     locale: 'zh',
     inputs: {
-      ...ElementPlusInputs,
-    },
-  }),
-)
+        ...ElementPlusInputs
+    }
+}))
 ```
 
 ## 基础表单案例
