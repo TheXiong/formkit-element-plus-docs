@@ -89,7 +89,11 @@ function getGuideSidebar() {
         },
         {
           text: '联动',
-          link: '/guide/relation',
+          link: '/guide/reaction',
+        },
+        {
+          text: 'schema',
+          link: '/guide/schema',
         },
       ]
     }

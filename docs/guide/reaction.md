@@ -1,32 +1,27 @@
-# list 列表
+# 联动
 
-用于处理数组类型数据结构。
+监听一个或多个字段的数据变化去控制另一个或者多个字段的状态
 
 ## 基础用法
 
-输入表单内容，观察数据变化
-
+监听“控制者”的值，控制“受控者”的显示隐藏
 :::demo
 
 ```vue
 <template>
   <FormKit ref="myForm" type="el-form" v-model="data" @Submit="onSubmit">
-    <FormKit type="el-input" name="name" label="姓名" validation="required" />
     <FormKit
-      type="el-select"
-      name="sex"
-      label="性别"
-      :options="[
-        // 设置下拉框选项
-        { value: '0', label: '女' },
-        { value: '1', label: '男' },
-      ]"
-      validation="required"
+        type="el-select"
+        name="select"
+        label="控制者"
+        :value="false"
+        :options="[
+            { value: true, label: '显示' },
+            { value: false, label: '隐藏' },
+        ]"
+        validation="required"
     />
-
-    <FormKit name="items" type="list">
-      <FormKit type="el-input" v-for="i in 5" :name="`item${i}`" :label="`item${i}`" validation="required" />
-    </FormKit>
+    <FormKit type="el-input" v-if="display" name="input" label="受控者" validation="required" />
 
     <template #footer="{ disabled, node }">
       <el-button
@@ -43,13 +38,18 @@
 </template>
 
 <script>
-import { ref, defineComponent } from 'vue'
+import { ref, defineComponent, watch } from 'vue'
 
 export default defineComponent({
   name: 'InputDemo',
   setup() {
     const data = ref()
     const myForm = ref()
+    const display = ref(true)
+
+    watch(()=>data.value?.select,()=>{
+        display.value = data.value.select
+    })
 
     const onSubmit = () => {
       console.log(data.value, 'submited')
@@ -60,7 +60,7 @@ export default defineComponent({
       })
     }
 
-    return { data, myForm, onSubmit }
+    return { data, myForm, onSubmit, display }
   },
 })
 </script>
