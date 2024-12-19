@@ -88,6 +88,10 @@ function getGuideSidebar() {
           link: '/guide/validation',
         },
         {
+          text: '数据源',
+          link: '/guide/datasource',
+        },
+        {
           text: '联动',
           link: '/guide/reaction',
         },

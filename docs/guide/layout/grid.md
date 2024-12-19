@@ -8,7 +8,7 @@
 
 ```vue
 <template>
-  <FormKit ref="myForm" type="el-form" v-model="data" @Submit="onSubmit">
+  <FormKit ref="myForm" type="el-form" v-model="data" @submit="onSubmit">
     <el-row>
       <el-col :span="12">
         <FormKit
@@ -79,7 +79,7 @@ export default defineComponent({
 
 ```vue
 <template>
-  <FormKit ref="myForm" type="el-form" v-model="data">
+  <FormKit ref="myForm" type="el-form" v-model="data" @submit="onSubmit">
     <FormKitSchema :schema="schema" />
 
     <template #footer="{ disabled, node }">

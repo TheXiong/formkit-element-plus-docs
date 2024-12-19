@@ -10,7 +10,7 @@ https://formkit.com/zh/essentials/schema
 
 ```vue
 <template>
-  <FormKit ref="myForm" type="el-form" label-position="top" v-model="data">
+  <FormKit ref="myForm" type="el-form" label-position="top" v-model="data" @submit="onSubmit">
     <FormKitSchema :schema="schema" />
 
     <template #footer="{ disabled, node }">
@@ -68,7 +68,7 @@ export default defineComponent({
 
 ```vue
 <template>
-  <FormKit ref="myForm" type="el-form" label-position="top" v-model="data">
+  <FormKit ref="myForm" type="el-form" label-position="top" v-model="data" @submit="onSubmit">
     <FormKitSchema :schema="schema" />
 
     <template #footer="{ disabled, node }">
@@ -229,7 +229,7 @@ export default defineComponent({
 
 ```vue
 <template>
-  <FormKit ref="myForm" type="el-form" label-position="top" v-model="data">
+  <FormKit ref="myForm" type="el-form" label-position="top" v-model="data" @submit="onSubmit">
     <FormKitSchema :schema="schema" />
 
     <template #footer="{ disabled, node }">
@@ -296,7 +296,7 @@ export default defineComponent({
 
 ```vue
 <template>
-  <FormKit ref="myForm" type="el-form" label-position="top" v-model="data">
+  <FormKit ref="myForm" type="el-form" label-position="top" v-model="data" @submit="onSubmit">
     <FormKitSchema :schema="schema" />
 
     <template #footer="{ disabled, node }">
@@ -367,7 +367,7 @@ export default defineComponent({
 
 ```vue
 <template>
-  <FormKit ref="myForm" type="el-form" label-position="top" v-model="data">
+  <FormKit ref="myForm" type="el-form" label-position="top" v-model="data" @submit="onSubmit">
     <FormKitSchema :schema="schema" />
 
     <template #footer="{ disabled, node }">
@@ -435,7 +435,7 @@ export default defineComponent({
 
 ```vue
 <template>
-  <FormKit ref="myForm" type="el-form" label-position="top" v-model="data">
+  <FormKit ref="myForm" type="el-form" label-position="top" v-model="data" @submit="onSubmit">
     <FormKitSchema :schema="schema" />
 
     <template #footer="{ disabled, node }">

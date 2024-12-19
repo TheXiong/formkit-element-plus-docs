@@ -54,7 +54,7 @@ app.use(plugin, defaultConfig({
 
 ```vue
 <template>
-  <FormKit ref="myForm" type="el-form" v-model="data" @Submit="onSubmit">
+  <FormKit ref="myForm" type="el-form" v-model="data" @submit="onSubmit">
     <FormKit type="el-input" name="name" label="姓名" validation="required" />
     <FormKit
       type="el-select"

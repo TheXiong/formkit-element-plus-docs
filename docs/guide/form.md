@@ -10,7 +10,7 @@
 
 ```vue
 <template>
-  <FormKit ref="myForm" type="el-form" v-model="data" @Submit="onSubmit">
+  <FormKit ref="myForm" type="el-form" v-model="data" @submit="onSubmit">
     <FormKit type="el-input" name="name" label="姓名" validation="required" />
     <FormKit
       type="el-select"
@@ -64,7 +64,7 @@ export default defineComponent({
 
 ```vue
 <template>
-  <FormKit ref="myForm" type="el-form" v-model="data" @Submit="onSubmit">
+  <FormKit ref="myForm" type="el-form" v-model="data" @submit="onSubmit">
     <FormKit type="el-input" name="name" label="姓名" validation="required" />
     <FormKit
       type="el-select"
@@ -124,7 +124,7 @@ export default defineComponent({
 
 ```vue
 <template>
-  <FormKit ref="myForm" type="el-form" v-model="data" @Submit="onSubmit">
+  <FormKit ref="myForm" type="el-form" v-model="data" @submit="onSubmit">
     <FormKit type="el-input" name="name" label="姓名" validation="required" />
     <FormKit
       type="el-select"
@@ -205,7 +205,7 @@ export default defineComponent({
     :labelPosition="labelPosition"
     labelWidth="100px"
     v-model="data"
-    @Submit="onSubmit"
+    @submit="onSubmit"
   >
     <FormKit type="el-input" name="name" label="姓名" validation="required" />
     <FormKit
@@ -275,7 +275,7 @@ export default defineComponent({
     type="el-form"
     :size="size"
     v-model="data"
-    @Submit="onSubmit"
+    @submit="onSubmit"
   >
     <FormKit type="el-input" name="name" label="姓名" validation="required" />
     <FormKit
@@ -338,7 +338,7 @@ export default defineComponent({
 
 ```vue
 <template>
-  <FormKit ref="myForm" type="el-form" v-model="data" @Submit="onSubmit">
+  <FormKit ref="myForm" type="el-form" v-model="data" @submit="onSubmit">
     <FormKit type="el-input" name="name" label="姓名" validation="required" />
 
     <el-row>
@@ -413,7 +413,7 @@ export default defineComponent({
 
 ```vue
 <template>
-  <FormKit ref="myForm" type="el-form" v-model="data" @Submit="onSubmit">
+  <FormKit ref="myForm" type="el-form" v-model="data" @submit="onSubmit">
     <FormKit type="el-input" name="name" label="姓名" validation="required" />
     <FormKit
       type="el-select"
@@ -475,7 +475,7 @@ export default defineComponent({
 ```vue
 <template>
   <el-button type="primary" @click="setValue" style="margin-bottom:18px">设置值</el-button>
-  <FormKit ref="myForm" type="el-form" v-model="data" @Submit="onSubmit">
+  <FormKit ref="myForm" type="el-form" v-model="data" @submit="onSubmit">
     <FormKit type="el-input" name="name" label="姓名" validation="required" />
     <FormKit
       type="el-select"

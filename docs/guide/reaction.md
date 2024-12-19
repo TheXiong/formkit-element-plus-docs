@@ -9,7 +9,7 @@
 
 ```vue
 <template>
-  <FormKit ref="myForm" type="el-form" v-model="data" @Submit="onSubmit">
+  <FormKit ref="myForm" type="el-form" v-model="data" @submit="onSubmit">
     <FormKit
         type="el-select"
         name="select"
