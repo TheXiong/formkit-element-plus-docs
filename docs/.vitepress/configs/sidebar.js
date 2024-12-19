@@ -96,6 +96,19 @@ function getGuideSidebar() {
           link: '/guide/schema',
         },
       ]
+    },
+    {
+      text: '布局',
+      items: [
+        {
+          text: '栅格',
+          link: '/guide/layout/grid',
+        },
+        {
+          text: '表格',
+          link: '/guide/layout/table',
+        },
+      ]
     }
   ]
 }

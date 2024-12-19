@@ -21,6 +21,7 @@ html.dark {
 .vp-doc table {
   display: table !important;
   width: 100%;
+  margin: 0;
 }
 
 .vp-doc tr:nth-child(2n) {
