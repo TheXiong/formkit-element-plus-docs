@@ -57,6 +57,7 @@ function getGuideSidebar() {
   return [
     {
       text: '介绍',
+      // collapsed: true,
       items: [
         {
           text: '快速上手',
@@ -70,6 +71,7 @@ function getGuideSidebar() {
     },
     {
       text: '基础',
+      // collapsed: true,
       items: [
         {
           text: '表单',         
@@ -103,14 +105,29 @@ function getGuideSidebar() {
     },
     {
       text: '布局',
+      // collapsed: true,
       items: [
         {
           text: '栅格',
           link: '/guide/layout/grid',
         },
         {
+          text: '折叠面板',
+          link: '/guide/layout/collapse',
+        },
+        {
           text: '表格',
           link: '/guide/layout/table',
+        },
+      ]
+    },
+    {
+      text: '输入',
+      // collapsed: true,
+      items: [
+        {
+          text: 'upload',
+          link: '/guide/inputs/upload',
         },
       ]
     }

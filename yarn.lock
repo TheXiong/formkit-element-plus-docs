@@ -1560,10 +1560,10 @@ format@^0.2.0:
   resolved "https://registry.yarnpkg.com/format/-/format-0.2.2.tgz#d6170107e9efdc4ed30c9dc39016df942b5cb58b"
   integrity sha512-wzsgA6WOq+09wrU1tsJ09udeR/YZRaeArL9e1wPbFg3GG2yDnC2ldKpxs4xunpFF9DgqCqOIra3bc1HWrJ37Ww==
 
-formkit-element-plus@1.0.17:
-  version "1.0.17"
-  resolved "https://registry.npmmirror.com/formkit-element-plus/-/formkit-element-plus-1.0.17.tgz#d8d1a79248b407538daa8cf20f7825828c5c677f"
-  integrity sha512-9It3D8pkhxMAIlACnDd3/faPQMVTKlYBK1iEliLa5PTy8Vry4v+eh+V/uL29dH1K/GAbcd0yNisq+CJv6wlvQQ==
+formkit-element-plus@1.0.20:
+  version "1.0.20"
+  resolved "https://registry.npmjs.org/formkit-element-plus/-/formkit-element-plus-1.0.20.tgz#35b494800a9e9d137c0fb47d22c1f3982076d2de"
+  integrity sha512-jJdK4QntrCUJFwLkgisDDHGrR7XpDxMxabBhcCTi3oJQrvLyC4/4q+IyuEmawH2ev8zXMFVBMtBu8CxkLs7iSw==
   dependencies:
     "@formkit/auto-animate" "^0.8.2"
     "@formkit/core" "^1.6.9"

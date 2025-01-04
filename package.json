@@ -32,6 +32,6 @@
     "@formkit/i18n": "^1.6.7",
     "@formkit/vue": "^1.6.7",
     "element-plus": "^2.8.6",
-    "formkit-element-plus": "1.0.17"
+    "formkit-element-plus": "1.0.20"
   }
 }
