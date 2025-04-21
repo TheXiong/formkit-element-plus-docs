@@ -66,7 +66,6 @@ export default defineComponent({
       name="dateTimeRange"
       label="日期时间范围选择器"
       validation="required"
-      type="datetimerange"
       start-placeholder="开始日期"
       end-placeholder="结束日期"
     />

@@ -170,6 +170,18 @@ function getGuideSidebar() {
           link: '/guide/inputs/el-time-select',
         },
         {
+          text: 'el-time-picker',
+          link: '/guide/inputs/el-time-picker',
+        },
+        {
+          text: 'el-date-picker',
+          link: '/guide/inputs/el-date-picker',
+        },
+        {
+          text: 'el-date-range-picker',
+          link: '/guide/inputs/el-date-range-picker',
+        },
+        {
           text: 'el-transfer',
           link: '/guide/inputs/el-transfer',
         },
