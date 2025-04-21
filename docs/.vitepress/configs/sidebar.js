@@ -126,8 +126,80 @@ function getGuideSidebar() {
       // collapsed: true,
       items: [
         {
-          text: 'upload',
+          text: 'el-cascader',
+          link: '/guide/inputs/el-cascader',
+        },
+        {
+          text: 'el-rate',
+          link: '/guide/inputs/el-rate',
+        },
+        {
+          text: 'el-select',
+          link: '/guide/inputs/el-select',
+        },
+        {
+          text: 'el-autocomplete',
+          link: '/guide/inputs/el-autocomplete',
+        },
+        {
+          text: 'el-upload',
           link: '/guide/inputs/upload',
+        },
+        {
+          text: 'el-tree-select',
+          link: '/guide/inputs/el-tree-select',
+        },
+        {
+          text: 'el-checkbox',
+          link: '/guide/inputs/el-checkbox',
+        },
+        {
+          text: 'el-radio-group',
+          link: '/guide/inputs/el-radio-group',
+        },
+        {
+          text: 'el-slider',
+          link: '/guide/inputs/el-slider',
+        },
+        {
+          text: 'el-textarea',
+          link: '/guide/inputs/el-textarea',
+        },
+        {
+          text: 'el-time-select',
+          link: '/guide/inputs/el-time-select',
+        },
+        {
+          text: 'el-transfer',
+          link: '/guide/inputs/el-transfer',
+        },
+        {
+          text: 'el-checkbox-group',
+          link: '/guide/inputs/el-checkbox-group',
+        },
+        {
+          text: 'el-tree',
+          link: '/guide/inputs/el-tree',
+        },
+        {
+          text: 'el-array-table',
+          link: '/guide/inputs/el-array-table',
+        },
+        {
+          text: 'el-array-cards',
+          link: '/guide/inputs/el-array-cards',
+        },
+        {
+          text: 'el-array-collapse',
+          link: '/guide/inputs/el-array-collapse',
+        },
+        {
+          text: 'el-array-items',
+          link: '/guide/inputs/el-array-items',
+        },
+        {
+          text: 'el-array-tabs',
+          link: '/guide/inputs/el-array-tabs',
         },
       ]
     }

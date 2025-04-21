@@ -30,7 +30,7 @@ yarn add formkit-element-plus
 
 ```typescript
 import { plugin, defaultConfig } from '@formkit/vue'
-import { ElementPlusInputs } from "formkit-element-plus";
+import { FormKitElementPlusPlugin } from "formkit-element-plus";
 import { zh } from '@formkit/i18n'
 import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
@@ -38,14 +38,11 @@ import "element-plus/dist/index.css";
 const app = createApp(App);
 
 app.use(ElementPlus);
-app.use(plugin, defaultConfig({
+app.use(FormKitElementPlusPlugin, {
     // set language
     locales: { zh },
-    locale: 'zh',
-    inputs: {
-        ...ElementPlusInputs
-    }
-}))
+    locale: 'zh'
+})
 ```
 
 ## 基础表单案例

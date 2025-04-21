@@ -404,7 +404,7 @@
 
 "@element-plus/icons-vue@^2.3.1":
   version "2.3.1"
-  resolved "https://registry.yarnpkg.com/@element-plus/icons-vue/-/icons-vue-2.3.1.tgz#1f635ad5fdd5c85ed936481525570e82b5a8307a"
+  resolved "https://registry.npmjs.org/@element-plus/icons-vue/-/icons-vue-2.3.1.tgz#1f635ad5fdd5c85ed936481525570e82b5a8307a"
   integrity sha512-XxVUZv48RZAd87ucGS48jPf6pKu0yV5UCg9f4FFwtrYxXOwWuVJo6wOvSLKEoMQKjv8GsX/mhP6UsC1lRwbUWg==
 
 "@esbuild/aix-ppc64@0.21.5":
@@ -1560,14 +1560,15 @@ format@^0.2.0:
   resolved "https://registry.yarnpkg.com/format/-/format-0.2.2.tgz#d6170107e9efdc4ed30c9dc39016df942b5cb58b"
   integrity sha512-wzsgA6WOq+09wrU1tsJ09udeR/YZRaeArL9e1wPbFg3GG2yDnC2ldKpxs4xunpFF9DgqCqOIra3bc1HWrJ37Ww==
 
-formkit-element-plus@1.0.20:
-  version "1.0.20"
-  resolved "https://registry.npmjs.org/formkit-element-plus/-/formkit-element-plus-1.0.20.tgz#35b494800a9e9d137c0fb47d22c1f3982076d2de"
-  integrity sha512-jJdK4QntrCUJFwLkgisDDHGrR7XpDxMxabBhcCTi3oJQrvLyC4/4q+IyuEmawH2ev8zXMFVBMtBu8CxkLs7iSw==
+formkit-element-plus@1.0.21:
+  version "1.0.21"
+  resolved "https://registry.npmjs.org/formkit-element-plus/-/formkit-element-plus-1.0.21.tgz#cc66bef198cb2e9ae463a6ae5fa472199165e908"
+  integrity sha512-bAkS47upda7jmkUHmLcv/gEQ3teNQThiHTCyYhd8r3UKTHb83zJPmseLfaP7KBmo+RX4B9jC2iUFxqYNJVOiGw==
   dependencies:
     "@formkit/auto-animate" "^0.8.2"
     "@formkit/core" "^1.6.9"
     "@formkit/inputs" "^1.6.9"
+    sortablejs "^1.15.6"
     vue "^3.5.13"
 
 fsevents@~2.3.2, fsevents@~2.3.3:
@@ -2437,6 +2438,11 @@ slash@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-5.1.0.tgz#be3adddcdf09ac38eebe8dcdc7b1a57a75b095ce"
   integrity sha512-ZA6oR3T/pEyuqwMgAKT0/hAv8oAXckzbkmR0UkUosQ+Mc4RxGoJkRmwHgHufaenlyAgE1Mxgpdcrf75y6XcnDg==
+
+sortablejs@^1.15.6:
+  version "1.15.6"
+  resolved "https://registry.npmjs.org/sortablejs/-/sortablejs-1.15.6.tgz#ff93699493f5b8ab8d828f933227b4988df1d393"
+  integrity sha512-aNfiuwMEpfBM/CN6LY0ibyhxPfPbyFeBTYJKCvzkJ2GkUpazIt3H+QIPAMHwqQ7tMKaHz1Qj+rJJCqljnf4p3A==
 
 source-map-js@^1.2.0, source-map-js@^1.2.1:
   version "1.2.1"

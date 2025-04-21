@@ -1,17 +1,14 @@
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
-import { plugin, defaultConfig } from "@formkit/vue";
-import { ElementPlusInputs, createOptionsLoaderPlugin } from "formkit-element-plus";
+import { FormKitElementPlusPlugin } from "formkit-element-plus";
 import { zh } from '@formkit/i18n'
+import { Menu } from '@element-plus/icons-vue'
 
 export function useFormkit(app) {
     app.use(ElementPlus)
-    app.use(plugin, defaultConfig({
+    app.use(FormKitElementPlusPlugin, {
         locales: { zh },
-        locale: 'zh',
-        inputs: {
-            ...ElementPlusInputs
-        },
-        plugins: [createOptionsLoaderPlugin()]
-    }))
+        locale: 'zh'
+    })
+    app.component('Menu', Menu)
 }
