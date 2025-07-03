@@ -1,8 +1,7 @@
 # FormKit element plus
 
-<a href="https://element-plus.org/">Element plus</a> for <a href="https://formkit.com/">FormKit.</a>
+FormKit Element Plus 是一个将 <a href="https://element-plus.org/">Element Plus</a> 表单组件无缝集成到 <a href="https://formkit.com/">FormKit</a> 的插件，支持直接传递 Element Plus 的所有属性和事件，助力高效构建强大、灵活的表单界面。
 
-大部分组件是基于 <a href="https://element-plus.org/">Element plus</a>, 属性会直接传递到element plus组件.
 
 ## 安装
 
