@@ -29,7 +29,6 @@ yarn add formkit-element-plus
 在入口main.ts文件中,全局注入FormKit、FormKitSchema和基于element-plus封装的输入组件。
 
 ```typescript
-import { plugin, defaultConfig } from '@formkit/vue'
 import { FormKitElementPlusPlugin } from "formkit-element-plus";
 import { zh } from '@formkit/i18n'
 import ElementPlus from "element-plus";

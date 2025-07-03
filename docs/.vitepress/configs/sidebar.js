@@ -112,12 +112,24 @@ function getGuideSidebar() {
           link: '/guide/layout/grid',
         },
         {
-          text: '折叠面板',
-          link: '/guide/layout/collapse',
+          text: 'el-array-table',
+          link: '/guide/layout/el-array-table',
         },
         {
-          text: '表格',
-          link: '/guide/layout/table',
+          text: 'el-array-cards',
+          link: '/guide/layout/el-array-cards',
+        },
+        {
+          text: 'el-array-collapse',
+          link: '/guide/layout/el-array-collapse',
+        },
+        {
+          text: 'el-array-items',
+          link: '/guide/layout/el-array-items',
+        },
+        {
+          text: 'el-array-tabs',
+          link: '/guide/layout/el-array-tabs',
         },
       ]
     },
@@ -192,27 +204,7 @@ function getGuideSidebar() {
         {
           text: 'el-tree',
           link: '/guide/inputs/el-tree',
-        },
-        {
-          text: 'el-array-table',
-          link: '/guide/inputs/el-array-table',
-        },
-        {
-          text: 'el-array-cards',
-          link: '/guide/inputs/el-array-cards',
-        },
-        {
-          text: 'el-array-collapse',
-          link: '/guide/inputs/el-array-collapse',
-        },
-        {
-          text: 'el-array-items',
-          link: '/guide/inputs/el-array-items',
-        },
-        {
-          text: 'el-array-tabs',
-          link: '/guide/inputs/el-array-tabs',
-        },
+        }
       ]
     }
   ]

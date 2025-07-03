@@ -1,28 +1,5 @@
 # 异步数据源
 
-## 使用OptionsLoaderPlugin插件
-
-```javascript
-import { plugin, defaultConfig } from '@formkit/vue'
-import {
-  ElementPlusInputs,
-  createOptionsLoaderPlugin, // [!code ++]
-} from 'formkit-element-plus'
-import { zh } from '@formkit/i18n'
-
-app.use(
-  plugin,
-  defaultConfig({
-    locales: { zh },
-    locale: 'zh',
-    inputs: {
-      ...ElementPlusInputs,
-    },
-    plugins: [createOptionsLoaderPlugin()], // [!code ++]
-  }),
-)
-```
-
 ## 基础用法
 
 :::demo
