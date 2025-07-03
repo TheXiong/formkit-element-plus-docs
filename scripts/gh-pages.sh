@@ -7,7 +7,7 @@ set -e
 pwd
 
 # 生成静态文件
-pnpm run docs:build
+npx pnpm run docs:build
 
 # 进入生成的文件夹
 cd docs/.vitepress/dist
@@ -20,4 +20,4 @@ git add -A
 git commit -m 'deploy to the gh-pages'
 
 # 如果发布到 https://<USERNAME>.github.io
-git push -f git@github.com:TheXiong/formkit-element-plus-docs.git master:gh-pages
+git push -f https://github.com/TheXiong/formkit-element-plus-docs.git master:gh-pages
